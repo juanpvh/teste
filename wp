@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 funcwp() {
 if [ $item = 1 ]; then
 if (whiptail --title "Certificado SSL" --msgbox "O DNS deve esta propagado para instalação do certificado, configure o A e Cname em seu gerenciador de DNS." 0 0 3>&1 1>&2 2>&3)
