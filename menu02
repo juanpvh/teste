@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 source /root/wp
 funinstall() {
 instaladores=$(whiptail --title "Instaladores" --menu " Escolha uma das opções para configurar sua VPS/Dedicado." 0 0 0 \
