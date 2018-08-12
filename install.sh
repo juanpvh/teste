@@ -5,4 +5,4 @@ wget https://raw.githubusercontent.com/juanpvh/teste/master/menu.sh && chmod +x 
 wget https://raw.githubusercontent.com/juanpvh/teste/master/menu02.sh && chmod +x menu02.sh
 wget https://raw.githubusercontent.com/juanpvh/teste/master/wp.sh && chmod +x wp.sh
 cd 
-clear
+
