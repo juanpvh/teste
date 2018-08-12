@@ -1,6 +1,4 @@
 #! /bin/bash
-funcwp() {
-if [ $item = 1 ]; then
 if (whiptail --title "Certificado SSL" --msgbox "O DNS deve esta propagado para instalação do certificado, configure o A e Cname em seu gerenciador de DNS." 0 0 3>&1 1>&2 2>&3)
 site_domain=$(whiptail --title "Entrada de nome do Domínio" --inputbox "Digite o Domínio do site:" 0 0 3>&1 1>&2 2>&3)
 wp_user=$(whiptail --title "Entrada de nome do usuário" --inputbox "Digite o usuário:" 0 0 3>&1 1>&2 2>&3)	
@@ -22,9 +20,7 @@ echo " EmailWordpress: $wp_email                                                
 echo "------------------------------------------------------------------------------"
 echo "${green}Aperte Enter para Voltar${NC}"
 read esperar
-painel
+menu02.sh
 else
-painel
+menu02.sh
 fi
-fi
-}
