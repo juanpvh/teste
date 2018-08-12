@@ -1,4 +1,5 @@
 #!/bin/sh
+source /root/wp
 funinstall() {
 instaladores=$(whiptail --title "Instaladores" --menu " Escolha uma das opções para configurar sua VPS/Dedicado." 0 0 0 \
 "WP" "Instalar e Configurar VPS para Wordpress" \
@@ -13,8 +14,7 @@ instaladores=$(whiptail --title "Instaladores" --menu " Escolha uma das opções
 ###Instalar e Configurar VPS para Wordpress###
 case $instaladores in
 WP)
-whiptail --title "Instalar e Configurar VPS para Wordpress" --msgbox "You chose option 1. Exit status $?" 8 45
-
+wp
 ;;
 2)
 vps-mc.sh
