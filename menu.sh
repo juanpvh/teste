@@ -2,7 +2,6 @@
 red='\033[0;31m'
 green='\033[0;32m'
 NC='\033[0m' # No Color
-source /usr/local/bin/menu02.sh
 ###MENU PRINCIPAL###
 if item=$(whiptail --title "Painel de Gerenciamento de Servidor" --menu "Escolha uma opção na lista abaixo" 0 0 0 \
 "1" "Instaladores" \
