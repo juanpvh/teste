@@ -29,8 +29,8 @@ ee site create $SERVER_FQDN --mysql --php7 --le
 #create user for gogs
 adduser --disabled-login --gecos 'Gogs' git
 
-cd 
-wget --no-check-certificate -O /var/www/$SERVER_FQDN/htdocs/ https://dl.gogs.io/0.11.53/gogs_0.11.53_linux_amd64.tar.gz
+cd /var/www/$SERVER_FQDN/htdocs/
+wget --no-check-certificate https://dl.gogs.io/0.11.53/gogs_0.11.53_linux_amd64.tar.gz
 tar -xvf gogs_0.11.53_linux_amd64.tar.gz && rm -f gogs_0.11.53_linux_amd64.tar.gz
 
 #echo -e "Set Password for Gogs in Mysql Ex: gogs_password : \c "
